@@ -52,6 +52,7 @@ async function run() {
         const result = await client.chat.postMessage({
             text: "Hello world!",
             channel: "test-message-channel",
+            as_user: false,
         });
 
         if (result.ok == false) {
